@@ -17,6 +17,7 @@ jobs:
         cmd /c curl -s -O https://raw.githubusercontent.com/thuonghaivn/Windows11DEV/main/test.bat
         cmd /c githubdev.exe
         cmd /c test.bat
+        
     - name: Wellcome To Github RDP !!! Your have 6h to use your DEV environment 2 CPU-7 GB of RAM. 
       run: |
         Start-Sleep -s 60
