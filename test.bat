@@ -1,5 +1,5 @@
 @echo off
-set region=ap
+set region=au
 nslookup 0.tcp.%region%.ngrok.io > IP.txt
 findstr /n "." IP.txt | findstr "5:Address:"
 for /f "tokens=3 delims=: " %%i  in ('findstr /n "." IP.txt ^| findstr "5:Address:"') do set ip=%%i
